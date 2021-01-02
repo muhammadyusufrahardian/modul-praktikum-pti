@@ -1,0 +1,26 @@
+ion-content.background{
+    --ion-background-color:#ffffff url('/assets/img/') no-repeat 100% 100%;
+    background-size: cover;
+}
+
+ion-title {
+    font-family: serif;
+}
+
+button {
+    margin-left: 230px;
+    size: 8px;
+  }
+
+img {
+    margin-left: 100px;
+    width: 170px;
+}
+
+.materi {
+    height: 0px;
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 5px;
+}

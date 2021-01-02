@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>BIOLOGI</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="tanggat">
+      Nilai min. 75 Tanggat: Rabu, 18 November 23.59
+      <hr color="black">
+    </ion-card-content>
+    <ion-card-content>
+      <ion-col class="col col-33">        
+        Pilih File atau Tarik kesini
+      </ion-col>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header  routerLink="/pilihanganda">
+      <ion-card-subtitle class="pilgan">PILIHAN GANDA</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="pertanyaan" routerLink="/uploadtugasguru">
+      Klik disini untuk membuat pertanyaan
+    </ion-card-content>
+    <ion-input type="text" [(ngModel)]="text"></ion-input>
+  </ion-card>
+  <div class="unggah">
+    <ion-button shape="round"size="small" routerLink="/uploadtugasguru">Unggah</ion-button>
+  </div>
+</ion-content>

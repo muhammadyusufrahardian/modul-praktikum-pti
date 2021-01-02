@@ -1,0 +1,32 @@
+ion-content.background{
+    --ion-background-color:#ffffff url('/assets/img/') no-repeat 100% 100%;
+    background-size: cover;
+}
+
+.kelas {
+    height: 40px;
+    color: black;
+    font-family: serif;
+}
+
+hr {
+height: 1px;
+color: black;
+}
+
+.kode {
+height: 55px;
+font-size: 13px;
+color: #646464;
+}
+
+img {
+    margin-left: 100px;
+    width: 170px;
+}
+
+.gabung {
+    margin-left: 150px;
+    font-size: 5px;
+    height: 250px;
+  }

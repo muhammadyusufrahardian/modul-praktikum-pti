@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <h2><strong>Daftar</strong></h2>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <element class="ion-item"></element>
+  <element class="card"></element>
+  <div class="container">
+    <ion-img src=" "></ion-img>
+  </div>
+
+<ion-list>
+  <ion-item>
+    <ion-label position="floating">Nama Lengkap</ion-label>
+    <ion-input type="text" [(ngModel)]="nama"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nomor Telepon</ion-label>
+    <ion-input type="text" [(ngModel)]="nomor"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">NIS/NIP</ion-label>
+    <ion-input type="text" [(ngModel)]="induk"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Kata Sandi</ion-label>
+    <ion-input type="password" [(ngModel)]="sandi"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Konfirmasi Kata Sandi</ion-label>
+    <ion-input type="password" [(ngModel)]="konfirmasi"></ion-input>
+  </ion-item>
+  <ion-button fill="solid" expand="block" (click)="daftar()">Daftar</ion-button>
+</ion-list>
+
+</ion-content>
