@@ -31,7 +31,7 @@ export class SigninsiswaPage implements OnInit {
     .auth
     .signInWithEmailAndPassword(this.email, this.password)
     .then(value => {
-     this.router.navigate(['/dashboard']);
+     this.router.navigate(['/dashboardsiswa']);
     })
     .catch(err => {
       this.presentAlert()
