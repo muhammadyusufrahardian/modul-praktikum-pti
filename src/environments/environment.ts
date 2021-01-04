@@ -4,15 +4,15 @@
 
 export const environment = {
   production: false, 
-   firebase : {
-    apiKey: "AIzaSyDxlCJwV5qBiRo4laKI61WJavlQozu2L0E",
-  authDomain: "sistem-manajemen-tugas-siswa.firebaseapp.com",
-  projectId: "sistem-manajemen-tugas-siswa",
-  storageBucket: "sistem-manajemen-tugas-siswa.appspot.com",
-  messagingSenderId: "361482246342",
-  appId: "1:361482246342:web:b0fd79d39c904c9444dfc7",
-  measurementId: "G-6LVEGRM5NM"
-  }
+  firebase: {
+    apiKey: "AIzaSyAYyBMy9Fwq3_jb-i2ntevOJRujCVECArc",
+    authDomain: "sistem-informasi-perpustakaan.firebaseapp.com",
+    projectId: "sistem-informasi-perpustakaan",
+    storageBucket: "sistem-informasi-perpustakaan.appspot.com",
+    messagingSenderId: "365627201458",
+    appId: "1:365627201458:web:ec676541b6418043f5b6ab",
+    measurementId: "G-0Q9Z40BRB1"
+}
 }
 
 /*

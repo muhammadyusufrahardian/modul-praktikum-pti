@@ -4,9 +4,6 @@ import { ModalController } from '@ionic/angular';
 import { Router} from '@angular/router';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AlertController } from '@ionic/angular';
-import { WelcomePage } from '../welcome/welcome.page';
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -32,7 +29,7 @@ export class LoginPage implements OnInit {
     .auth
     .signInWithEmailAndPassword(this.email, this.password)
     .then(value => {
-     this.router.navigate(['/dashboard']);
+     this.router.navigate(['/halamanutama']);
     })
     .catch(err => {
       this.presentAlert()
@@ -55,10 +52,9 @@ export class LoginPage implements OnInit {
 
   async back() {
     const modal = await this.modalCtrl.create({
-      component: WelcomePage,
+      component: LoginPage,
       cssClass: 'my-custom-class'
     });
     return await modal.present();
   }
-
 }
