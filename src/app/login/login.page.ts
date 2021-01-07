@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 import { Router} from '@angular/router';
-import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireAuth } from '@angular/fire/auth';
 import { AlertController } from '@ionic/angular';
+import { LoginutamaPage } from '../loginutama/loginutama.page';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -21,15 +22,14 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
+
   email:any;
   password:any;
   loading: boolean;
   masuk(){
-    this.auth
-    .auth
-    .signInWithEmailAndPassword(this.email, this.password)
+    this.auth.signInWithEmailAndPassword(this.email, this.password)
     .then(value => {
-     this.router.navigate(['/halamanutama']);
+     this.router.navigate(['/dashboard']);
     })
     .catch(err => {
       this.presentAlert()
@@ -52,9 +52,10 @@ export class LoginPage implements OnInit {
 
   async back() {
     const modal = await this.modalCtrl.create({
-      component: LoginPage,
+      component: LoginutamaPage,
       cssClass: 'my-custom-class'
     });
     return await modal.present();
   }
+
 }

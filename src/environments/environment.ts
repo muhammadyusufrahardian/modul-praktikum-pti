@@ -4,15 +4,15 @@
 
 export const environment = {
   production: false, 
-  firebase: {
-    apiKey: "AIzaSyAYyBMy9Fwq3_jb-i2ntevOJRujCVECArc",
-    authDomain: "sistem-informasi-perpustakaan.firebaseapp.com",
-    projectId: "sistem-informasi-perpustakaan",
-    storageBucket: "sistem-informasi-perpustakaan.appspot.com",
-    messagingSenderId: "365627201458",
-    appId: "1:365627201458:web:ec676541b6418043f5b6ab",
-    measurementId: "G-0Q9Z40BRB1"
-}
+   firebase : {
+    apiKey: "AIzaSyA7Fo9DM7Vv45f2upbtWMACO4KKP9xFs5Y",
+    authDomain: "myapp2-88a68.firebaseapp.com",
+    projectId: "myapp2-88a68",
+    storageBucket: "myapp2-88a68.appspot.com",
+    messagingSenderId: "830900597301",
+    appId: "1:830900597301:web:77b85d32155b0ccca1777c",
+   
+  }
 }
 
 /*
